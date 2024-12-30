@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Top 6 Hacker Name</h1>
+        <ul>
+            <li>1. <span>Kevin Mitnick</span></li>
+            <li>2. <span>Albert Gonzalez</span></li>
+            <li>3. <span>Robert Tappan Morris</span></li>
+            <li>4. <span>Kevin Poulsen</span></li>
+            <li>5. <span>Jonathan James</span></li>
+            <li>6. <span>Gary McKinnon</span></li>
+        </ul>
+    </div>
+    <script>
+        const unList = document.querySelector('ul');
+        const List = document.createElement('li');
+
+        List.textContent = "Kaushik Kumar";
+        unList.appendChild(List);
+    </script>
+</body>
+</html>

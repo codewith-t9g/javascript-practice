@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling in JS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Top 5 gaming</h1>
+        <ul>
+            <li>Fortnite</li>
+            <li>PlayerUnknown's Battlegrounds</li>
+            <li class="cp">Call of Duty</li>
+            <li class="cp">Grand Theft Auto</li>
+            <li>League of Legends</li>
+
+        </ul>
+    </div>
+</body>
+<script>
+    // var a = document.querySelector('.cp');
+    // console.log(a.previousElementSibling.previousElementSibling);
+
+    // var a = document.querySelector('.cp');
+    // if(a.previousElementSibling == null){
+    //     console.log("Sibling not present");
+    // }
+    // else{
+    //     console.log(a.previousElementSibling);
+    // }
+
+    var a = document.querySelectorAll('.cp');
+    a.forEach((ele)=>{
+        console.log(ele.previousElementSibling);
+    })
+
+
+</script>
+</html>
